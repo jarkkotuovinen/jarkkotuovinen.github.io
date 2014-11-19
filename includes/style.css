@@ -1,0 +1,199 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+h3, h4 {
+    color: #FFFFFF;
+    font-family: 'LL Circular', sans-serif;
+    font-weight: 500;
+}
+h1  {    
+        font-family: 'LL Circular', sans-serif;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 72px;
+
+
+}
+h2  {
+    color: #999;
+    padding-top: 5%;
+    font-weight: 500;
+    font-size: 72px;
+
+}
+h5{   
+    padding-top: 5%;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 72px;
+
+}
+h6{
+    color: #8FBC8F;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-weight: 36px;  
+}
+
+p {    color: black;
+    font-family: 'Lato', sans-serif;
+}
+html {
+    background-color: #474747;
+}
+header {
+
+    background-color:transparent;
+    width: 100%;
+    height: 76px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+address {
+        color: #FFFFFF;
+}
+a {
+
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+a:hover {
+
+    color: #444;
+
+}
+
+nav {
+
+    float: right;
+    padding: 20px;  
+
+}
+ul {
+
+    list-style: none;
+
+}
+
+li {
+    display: inline-block;
+    float: left;
+    padding: 10px
+
+}
+.top {
+    background-color:transparent;
+}
+.top .navbar-brand {
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    background-color:transparent;
+    text-decoration: none;
+}
+.top .container {
+    text-align: center;
+    padding: 0;
+}
+.banner {
+    background-color: #5bc0de;
+}
+.banner .container {
+    text-align: center;
+    width: 100%;
+    background-color: #5bc0de;
+    min-height: 500px;
+    padding: 40px 30px 30px 40px;
+}
+.banner .container p {
+    font-size: 48px;
+    padding-left: 5px;
+    font-weight: 300;
+}
+.ylapalkki {
+        background-image: url("../363760.jpg"); height: 720px; width: 100%;
+    background-color: #CCC;
+}
+
+.ylapalkki .container {
+    padding-top: 20%;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+.middle2 {
+    background-color: #373737;
+}
+.middle2 .container {
+    text-align: center;
+    width: 100%;
+    background-color: #FFFFFF;
+    min-height: 686px;
+    padding-bottom: 20px;
+}
+
+.middle3 {
+    background-color: #373737;
+}
+.middle3 .container {
+    background-image: url("../kiekko.png"); height: 686px; width: 100%;
+    text-align: center;
+    width: 100%;
+    background-color: green;
+    min-height: 600px;
+    padding-bottom: 20px;
+}
+
+.navbar-nav li a {
+    color: #CCC;
+    font-family: 'Lato', sans-serif;
+}
+.navbar-nav li a:hover {
+    background-color: #373737;
+}
+.bottom {
+    background-color: #474747;
+}
+.bottom .container {
+    text-align: center;
+    padding-top: 1%;
+    width: 100%;
+    background-color: #373737;
+    min-height: 50px;
+}
+.bottom .container h3 {
+    color: #999;
+}
+.bottom .container p {
+    color: #666;
+}
+.navbar-toggle {
+    color: #009b9b;
+    font-size: 32px;
+    margin: 3px;
+    padding: 2px 5px;
+    line-height: 32px;
+}
+.navbar-toggle:hover {
+    background-color: #373737;
+}
+.navbar-nav {
+    margin: 0;
+}
+
+.content p {
+    line-height: 30px;
+    font-size: 16px;
+}
+.to-tutorial {
+    text-align: left;
+}
+.form-group{
+
+}
+
+
