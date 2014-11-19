@@ -1,0 +1,104 @@
+h1  {    
+	    color: #FFFFFF;
+        font-family: 'LL Circular', sans-serif;
+    font-weight: 500;
+    font-size: 72px;
+}
+
+h3, h4 {
+    color: #FFFFFF;
+    font-family: 'LL Circular', sans-serif;
+    font-weight: 500;
+}
+.navbar {
+	margin-bottom: 0px;
+	    
+
+}
+
+.pizza {
+    background-color: #CCC;
+}
+
+.pizza .container {
+	        background-image: url("pizzabg2.jpg"); height: 800px; width: 100%;
+    background-size: 100% auto;
+
+    padding-top: 15%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.lihapizza {
+    background-color: #CCC;
+}
+
+.lihapizza .container {
+	        background-image: url("pizza.jpg"); height: 604px; width: 100%;
+
+    padding-top: 5%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.vegepizza {
+    background-color: #CCC;
+}
+
+.vegepizza .container {
+	        background-image: url("pizza.jpg"); height: 604px; width: 100%;
+
+    padding-top: 5%;
+    text-align: center;
+    margin: 0 auto;
+}
+.omavalinta {
+    background-color: #CCC;
+}
+
+.omavalinta .container {
+	        background-image: url("pizza.jpg"); height: 604px; width: 100%;
+
+    padding-top: 5%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.OKnappula {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #44c767;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.OKnappula:hover {
+	background-color:#5cbf2a;
+}
+.OKnappula:active {
+	position:relative;
+	top:1px;
+}
