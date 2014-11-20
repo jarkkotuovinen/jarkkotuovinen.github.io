@@ -102,3 +102,19 @@ a:active {
 	position:relative;
 	top:1px;
 }
+.bottom {
+    background-color: #474747;
+}
+.bottom .container {
+    text-align: center;
+    padding-top: 1%;
+    width: 100%;
+    background-color: #373737;
+    min-height: 50px;
+}
+.bottom .container h3 {
+    color: #999;
+}
+.bottom .container p {
+    color: #666;
+}
