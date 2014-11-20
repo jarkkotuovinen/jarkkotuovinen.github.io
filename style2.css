@@ -1,6 +1,6 @@
 h1  {    
-	    color: #FFFFFF;
-        font-family: 'LL Circular', sans-serif;
+	color: #FFFFFF;
+    font-family: 'LL Circular', sans-serif;
     font-weight: 500;
     font-size: 72px;
 }
@@ -12,8 +12,6 @@ h3, h4 {
 }
 .navbar {
 	margin-bottom: 0px;
-	    
-
 }
 
 .pizza {
@@ -21,9 +19,8 @@ h3, h4 {
 }
 
 .pizza .container {
-	        background-image: url("pizzabg2.jpg"); height: 800px; width: 100%;
+	background-image: url("pizzabg2.jpg"); height: 798px; width: 100%;
     background-size: 100% auto;
-
     padding-top: 15%;
     text-align: center;
     margin: 0 auto;
@@ -34,8 +31,7 @@ h3, h4 {
 }
 
 .lihapizza .container {
-	        background-image: url("pizza.jpg"); height: 604px; width: 100%;
-
+	height: 604px; width: 100%;
     padding-top: 5%;
     text-align: center;
     margin: 0 auto;
@@ -46,8 +42,7 @@ h3, h4 {
 }
 
 .vegepizza .container {
-	        background-image: url("pizza.jpg"); height: 604px; width: 100%;
-
+    height: 604px; width: 100%;
     padding-top: 5%;
     text-align: center;
     margin: 0 auto;
@@ -57,8 +52,8 @@ h3, h4 {
 }
 
 .omavalinta .container {
-	        background-image: url("pizza.jpg"); height: 604px; width: 100%;
-
+	background-image: url("pizza.jpg"); height: 604px; width: 100%;
+    background-size: 100% auto;
     padding-top: 5%;
     text-align: center;
     margin: 0 auto;
