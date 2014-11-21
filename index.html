@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- head -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,25 +10,44 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <script src="includes/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="includes/bootstrap/js/scrollaus.js" type="text/javascript"></script>
-
+    <script src="animatedcollapse.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      animatedcollapse.addDiv('jason', 'fade=1,height=300px')
+      animatedcollapse.ontoggle=function($, divobj, state){}
+      animatedcollapse.init()
+    </script>
 </head>
+  <!-- /head -->
 <body>
+  <!-- navbar -->
 <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+  <!-- /jason -->
+    <div id="jason" style=" background: #2ecc71; display:none">
+     <div class="col-md-3"><h2>1. Valitse haluamasi pizzalaatu</h2><br><br><br>LihaPizza<br>VegePizza<br>Oma Valinta</div>
+  <div class="col-md-3"><h2>2. Syötä yhteystietosi</h2><br><br><br>Nimi<br>Osoite<br>Puhelinnumero</div>
+  <div class="col-md-3"><h2>3. Valitse haluamasi tuotteet</h2><br><br><br>Pizza<br>Juoma<br>Salaatti</div>
+    <div class="col-md-3"><h2>4. Tilaa ja nauti222222222!</h2><br><br><br>LihaPizza<br>VegePizza<br>Oma Valinta</div></br>
+      <a href="javascript:animatedcollapse.hide('jason')"class=" btn btn-primary glyphicon glyphicon-chevron-up" aria-hidden="true">Piilota</a>
+    </div>
+    <!-- /jason -->
+
+
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand scroll-top" href="#">LetThereBePizza</a>
     </div>
-
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#" class="scroll-link " data-id="lihapizza">LihaPizza</a></li>
         <li><a href="#" class="scroll-link " data-id="vegepizza">VegePizza</a></li>
         <li><a href="#" class="scroll-link " data-id="omavalinta">Oma Valinta</a></li>
+        <li><a href="javascript:animatedcollapse.show('jason')" >Ohjeet</a></li>
       </ul>
-    </div><!-- /.navbar -->
+    </div>
   </div><!-- /.container-fluid -->
-</nav>
+</nav><!-- /.navbar -->
 
+<!-- pizza -->
 <div class="pizza" id="pizza">
         <div class="container">
             <h1>LetThereBePizza</h1><br>
@@ -42,12 +62,74 @@
         </div>
 </div>
 
+<!-- lihapizza -->
 <div class="lihapizza" id="lihapizza">
-        <div class="container">
-                        <div class="col-md-6">
-
+          <div class="container">
             <h1>LihaPizza</h1>
             <form action="tilaa.php" method="post">
+            <h2>Nimi: <input align="bottom"  type="text" name="name"><tr></tr></h2>
+            <h2>Osoite: <input type="text" name="osoite"></h2>
+            <h2>Puhelinnumero: <input type="text" name=""></h2><br>
+
+ <div class="col-md-4"><img src="pizza1.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h2>Quattro</h2>herkkua</div>
+  <div class="col-md-4"><img src="pizza2.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h2>tutti frutti</h2>herkkua</div>
+  <div class="col-md-4"><img src="pizza3.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h2>frutti dimare</h2>herkkua</div>
+  <div class="col-md-4"><img src="pizza4.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h2>alobelo</h2>herkkua</div>
+  <div class="col-md-4"><img src="pizza5.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h2>tofupizza</h2>herkkua</div>
+  <div class="col-md-4"><img src="pizza6.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h2>herkkusieni</h2>herkkua<br><br><br></div>
+
+          <h2>Valitse juoma 2e </h2>
+           <select>
+             <option value="Cola">Cola</option>
+            <option value="Pepsi">Pepsi</option>
+            <option value="Fanta">Fanta</option>
+           <option value="Sprite">Sprite</option>
+          </select><br>
+        <h2>Salaatti 2e<input type="checkbox"><br><br>
+          <input type="submit" class="OKnappula" value="Tilaa"></h2>
+        </form>
+        </div>
+        </div>
+
+</div>
+
+<!-- vegepizza -->
+<div class="vegepizza" id="vegepizza">
+  <div class="container">
+  <div class="row">
+                            <h5>VegePizza</h5>
+  <div class="col-md-2"><h2>Quattro</h2><img src="pizza1.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px">herkkua</div>
+  <div class="col-md-2"><h2>tutti frutti</h2><img src="pizza2.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px">herkkua</div>
+  <div class="col-md-2"><h2>frutti dimare</h2><img src="pizza3.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px">herkkua</div>
+  <div class="col-md-2"><h2>alobelo</h2><img src="pizza4.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px">herkkua</div>
+  <div class="col-md-2"><h2>tofupizza</h2><img src="pizza5.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px">herkkua</div>
+  <div class="col-md-2"><h2>herkkusieni</h2><img src="pizza6.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px">herkkua <br><br><br><br></div>
+          
+          Valitse juoma 2e 
+           <select>
+             <option value="Cola">Cola</option>
+            <option value="Pepsi">Pepsi</option>
+            <option value="Fanta">Fanta</option>
+           <option value="Sprite">Sprite</option>
+          </select><br>
+        Salaatti 2e<input type="checkbox"><br><br>
+            <input type="submit" class="OKnappula" value="Tilaa">
+
+</div>
+</div>
+</div>
+
+        </div>
+</div>
+
+<!-- omavalinta -->
+<div class="omavalinta" id="omavalinta">
+  <div class="container">
+  <div class="row">
+                            <h1>Oma Valinta</h1>
+  <div class="col-md-4">
+
+ <form action="tilaa.php" method="post">
 
   Nimi: <input align="bottom"  type="text" name="name"><tr></tr><br>
   Osoite: <input type="text" name="osoite"><br>
@@ -69,29 +151,23 @@
    <option value="Sprite">Sprite</option>
   </select><br>
  Salaatti 2e<input type="checkbox"><br><br>
-
-
-
 <input type="submit" class="OKnappula" value="Tilaa">
 
-
         </form>
-        </div>
+
+  </div>
+  <div class="col-md-8"><img src="pizzaa.png" alt="Mountain View" style="width:404px;height:428px">
+</div>
+</div>
+</div>
+</div>
+
         </div>
 </div>
 
-<div class="vegepizza" id="vegepizza">
-        <div class="container">
-                        <h1>VegePizza</h1>
 
-        </div>
-</div>
-<div class="omavalinta" id="omavalinta">
-        <div class="container">
-                        <h1>Oma valinta</h1>
 
-        </div>
-</div>
+<!-- footer-->
      <div class="bottom">  
         <div class="container">
             <div class="col-md-4">
@@ -105,9 +181,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 
 </body>
