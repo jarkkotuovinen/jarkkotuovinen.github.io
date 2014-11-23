@@ -23,10 +23,10 @@
 <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
   <!-- /jason -->
     <div id="jason" style=" background: #2ecc71; display:none">
-     <div class="col-md-3"><h2>1. Valitse haluamasi pizzalaatu</h2><br><br><br>LihaPizza<br>VegePizza<br>Oma Valinta</div>
-  <div class="col-md-3"><h2>2. Syötä yhteystietosi</h2><br><br><br>Nimi<br>Osoite<br>Puhelinnumero</div>
-  <div class="col-md-3"><h2>3. Valitse haluamasi tuotteet</h2><br><br><br>Pizza<br>Juoma<br>Salaatti</div>
-    <div class="col-md-3"><h2>4. Tilaa ja nauti222222222!</h2><br><br><br>LihaPizza<br>VegePizza<br>Oma Valinta</div></br>
+     <div class="col-md-3"><h2>1. Selaa haluamaasi pizzalaatuun</h2><img src="pizzaIcon.png" class="img-circle" alt="Mountain View" style="width:160px;height:160px"></div>
+  <div class="col-md-3"><h2>2. Syötä yhteystietosi</h2><img src="Clipboard.png" class="img-circle" alt="Mountain View" style="width:160px;height:160px"></div>
+  <div class="col-md-3"><h2>3. Valitse haluamasi tuotteet</h2><img src="pencil.png" class="img-circle" alt="Mountain View" style="width:160px;height:160px"></div>
+    <div class="col-md-3"><h2>4. Tilaa tuotteet ja nauti!</h2><img src="voitto.png" class="img-circle" alt="Mountain View" style="width:160px;height:160px"></div><br><br><br><br><br><br><br>
       <a href="javascript:animatedcollapse.hide('jason')"class=" btn btn-primary glyphicon glyphicon-chevron-up" aria-hidden="true">Piilota</a>
     </div>
     <!-- /jason -->
@@ -47,12 +47,13 @@
   </div><!-- /.container-fluid -->
 </nav><!-- /.navbar -->
 
+
+
 <!-- pizza -->
 <div class="pizza" id="pizza">
         <div class="container">
             <h1>LetThereBePizza</h1><br>
-             <h4>LetThereBePizza.com auttaa pizzan nälkäisiä ihmisiä ja maukkaita pizzoja löytämään toisensa mahdollisimman helposti ja nopeasti. </h4> 
-            <h4>Se ei ole koskaan ollut näin helppoa.</h4><br>
+             <h4><span style="color:#22a7f0; text-align:center">LetThereBePizza.com</span> auttaa pizzan nälkäisiä ihmisiä ja maukkaita pizzoja löytämään toisensa mahdollisimman helposti ja nopeasti. </h4> <br>
             <h4>Tilaa alla olevista painikkeista itsellesi mieluisa vaihtoehto</h4><br>
 
             <h5><a href="#" class="scroll-link btn btn-success btn-lg" data-id="lihapizza">Lihapizza</a>
@@ -64,105 +65,144 @@
 
 <!-- lihapizza -->
 <div class="lihapizza" id="lihapizza">
-          <div class="container">
+              <form action="tilaa.php" method="post">
+            
+              <div class="container">
             <h1>LihaPizza</h1>
-            <form action="tilaa.php" method="post">
-            <h2>Nimi: <input align="bottom"  type="text" name="name"><tr></tr></h2>
-            <h2>Osoite: <input type="text" name="osoite"></h2>
-            <h2>Puhelinnumero: <input type="text" name=""></h2><br>
 
- <div class="col-md-4"><img src="pizza1.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h2>Quattro</h2>herkkua</div>
-  <div class="col-md-4"><img src="pizza2.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h2>tutti frutti</h2>herkkua</div>
-  <div class="col-md-4"><img src="pizza3.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h2>frutti dimare</h2>herkkua</div>
-  <div class="col-md-4"><img src="pizza4.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h2>alobelo</h2>herkkua</div>
-  <div class="col-md-4"><img src="pizza5.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h2>tofupizza</h2>herkkua</div>
-  <div class="col-md-4"><img src="pizza6.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h2>herkkusieni</h2>herkkua<br><br><br></div>
+<div class="col-md-12"><h2></div>
+<div class="col-md-12"><h2></div>
 
-          <h2>Valitse juoma 2e </h2>
-           <select>
-             <option value="Cola">Cola</option>
+             <div><h6>Syötä yhteystiedot</h6></div>
+
+            <div style=" display:inline">
+            <h2>Nimi: <input type="text" name="name" style="background:transparent"><br></h2>
+            <h2>Osoite: <input type="text" name="osoite" style="background:transparent"><br></h2>
+            <h2>Puhelinnumero: <input type="text" name="" style="background:transparent;"></h2>
+          </div>
+<div class="col-md-12"><h2></div>
+<div class="col-md-12"><h2></div>
+
+             <div><h6>Valitse haluamasi pizza</h6></div>
+
+
+  <div class="col-md-2"><h2>1. Quattro</h2><img src="pizza1.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h3>Salami<br>Kinkku<br>Tonnikala<br>Herkkusieni</h3></div>
+
+  <div class="col-md-2"><h2>2. Tutti frutti</h2><img src="pizza2.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h3>Pekoni<br>Kananmuna<br>Feta<br>Turkinpippuri</h3></div>
+
+  <div class="col-md-2"><h2>3. Kebab</h2><img src="pizza3.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h3>Kebab<br>Kananmuna<br>Pekoni<br>Turkinpippuri</h3></div>
+
+  <div class="col-md-2"><h2>4. Alobelo</h2><img src="pizza4.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h3>Härkä<br>Hevonen<br>Jänis<br>Karhunliha</h3></div>
+
+  <div class="col-md-2"><h2>5. Tonno</h2><img src="pizza5.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h3>Tonnikala<br>Aurajuusto<br>Sipuli<br>Katkarapu</h3></div>
+
+  <div class="col-md-2"><h2>6. Maestro</h2><img src="pizza6.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h3>Kebab<br>Simpukka<br>Feta<br>Turkinpippuri</h3></div>
+
+<div class="col-md-12"><h2></div>
+<div class="col-md-12"><h2></div>
+<div class="col-md-12"><h2></div>
+          <div>
+          <h6>Valitse juoma 2e </h6>
+           <select class="juomanappula">
+            <option value="Cola">Ei juomaa</option>
+            <option value="Cola">Cola</option>
             <option value="Pepsi">Pepsi</option>
             <option value="Fanta">Fanta</option>
            <option value="Sprite">Sprite</option>
           </select><br>
-        <h2>Salaatti 2e<input type="checkbox"><br><br>
-          <input type="submit" class="OKnappula" value="Tilaa"></h2>
+        <h6>Salaatti 2e<br><input type="checkbox"><br><br>
+          </div>
+
+<div class="col-md-12"><h2></div>
+<div class="col-md-12"><h2></div>
+
+
+          <input type="submit" class="OKnappula" value="Tilaa"></h6>
+
         </form>
         </div>
         </div>
 
 </div>
-
 <!-- vegepizza -->
 <div class="vegepizza" id="vegepizza">
-  <div class="container">
-  <div class="row">
-                            <h5>VegePizza</h5>
-  <div class="col-md-2"><h2>Quattro</h2><img src="pizza1.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px">herkkua</div>
-  <div class="col-md-2"><h2>tutti frutti</h2><img src="pizza2.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px">herkkua</div>
-  <div class="col-md-2"><h2>frutti dimare</h2><img src="pizza3.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px">herkkua</div>
-  <div class="col-md-2"><h2>alobelo</h2><img src="pizza4.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px">herkkua</div>
-  <div class="col-md-2"><h2>tofupizza</h2><img src="pizza5.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px">herkkua</div>
-  <div class="col-md-2"><h2>herkkusieni</h2><img src="pizza6.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px">herkkua <br><br><br><br></div>
-          
-          Valitse juoma 2e 
-           <select>
-             <option value="Cola">Cola</option>
+              <form action="tilaa.php" method="post">
+            
+              <div class="container">
+
+            <h1>VegePizza</h1>
+
+            <div class="col-md-12"><h2></div>
+<div class="col-md-12"><h2></div>
+             <div><h6>Syötä yhteystiedot</h6></div>
+
+            
+            <h2>Nimi: <input type="text" name="name" style="background:transparent"><br></h2>
+            <h2>Osoite: <input type="text" name="osoite" style="background:transparent"><br></h2>
+            <h2>Puhelinnumero: <input type="text" name="" style="background:transparent"></h2>
+<div class="col-md-12"><h2></div>
+<div class="col-md-12"><h2></div>
+
+             <div><h6>Valitse haluamasi pizza</h6></div>
+
+
+  <div class="col-md-2"><h2>1. Quattro</h2><img src="pizza1.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h3>Salami<br>Kinkku<br>Tonnikala<br>Herkkusieni</h3></div>
+
+  <div class="col-md-2"><h2>2. Tutti frutti</h2><img src="pizza2.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h3>Pekoni<br>Kananmuna<br>Feta<br>Turkinpippuri</h3></div>
+
+  <div class="col-md-2"><h2>3. Kebab</h2><img src="pizza3.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h3>Kebab<br>Kananmuna<br>Pekoni<br>Turkinpippuri</h3></div>
+
+  <div class="col-md-2"><h2>4. Alobelo</h2><img src="pizza4.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h3>Härkä<br>Hevonen<br>Jänis<br>Karhunliha</h3></div>
+
+  <div class="col-md-2"><h2>5. Tonno</h2><img src="pizza5.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h3>Tonnikala<br>Aurajuusto<br>Sipuli<br>Katkarapu</h3></div>
+
+  <div class="col-md-2"><h2>6. Maestro</h2><img src="pizza6.jpg" class="img-circle" alt="Mountain View" style="width:160px;height:160px"><h3>Kebab<br>Simpukka<br>Feta<br>Turkinpippuri</h3></div>
+
+<div class="col-md-12"><h2></div>
+<div class="col-md-12"><h2></div>
+<div class="col-md-12"><h2></div>
+<div class="col-md-12"><h2></div>
+
+          <h6>Valitse juoma 2e </h6>
+           <select class="juomanappula">
+            <option value="Cola">Ei juomaa</option>
+            <option value="Cola">Cola</option>
             <option value="Pepsi">Pepsi</option>
             <option value="Fanta">Fanta</option>
            <option value="Sprite">Sprite</option>
           </select><br>
-        Salaatti 2e<input type="checkbox"><br><br>
-            <input type="submit" class="OKnappula" value="Tilaa">
+        <h6>Salaatti 2e<br><input type="checkbox"><br><br>
 
-</div>
-</div>
-</div>
+<div class="col-md-12"><h2></div>
+<div class="col-md-12"><h2></div>
 
+
+          <input type="submit" class="OKnappula" value="Tilaa"></h6>
+
+        </form>
         </div>
+        </div>
+
 </div>
 
 <!-- omavalinta -->
 <div class="omavalinta" id="omavalinta">
   <div class="container">
-  <div class="row">
+
                             <h1>Oma Valinta</h1>
   <div class="col-md-4">
 
  <form action="tilaa.php" method="post">
 
-  Nimi: <input align="bottom"  type="text" name="name"><tr></tr><br>
-  Osoite: <input type="text" name="osoite"><br>
-  Puhelinnumero: <input type="text" name=""><br><br>
-
-  <table border = "1">
-    <tr><td>Quattro staggioni<input type="checkbox"></td></tr>
-    <tr><td>Kebab pizza<input type="checkbox"><br></td></tr>
-    <tr><td>Pollo<input type="checkbox"></td></tr>
-    <tr><td>Salamipizza<input type="checkbox"><br></td></tr>
-    <tr><td>Pekonipizza<input type="checkbox"></td></tr>
-    <tr><td>Tutti Frutti<input type="checkbox"><br><br></td></tr>
-  </table>
- Valitse juoma 2e 
-  <select>
-    <option value="Cola">Cola</option>
-    <option value="Pepsi">Pepsi</option>
-    <option value="Fanta">Fanta</option>
-   <option value="Sprite">Sprite</option>
-  </select><br>
- Salaatti 2e<input type="checkbox"><br><br>
-<input type="submit" class="OKnappula" value="Tilaa">
 
         </form>
 
   </div>
-  <div class="col-md-8"><img src="pizzaa.png" alt="Mountain View" style="width:404px;height:428px">
-</div>
-</div>
-</div>
-</div>
+  <div class="col-md-4"><img src="pizzaa.png" alt="Mountain View" style="width:404px;height:428px">
+    <input type="submit" class="OKnappula" value="Tilaa">
 
-        </div>
+</div>
+</div>
 </div>
 
 
